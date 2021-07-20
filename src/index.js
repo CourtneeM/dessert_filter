@@ -37,6 +37,7 @@ const eventHandler = (() => {
           dessertsContainer.appendChild(generateDessertContainer(dessertObj));
         });
       }
+      console.log(desserts[e.target.value][0].img);
     });
   })();
 })();

@@ -10,6 +10,15 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.(png|jpeg|jpg|gif)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: './images/'
+          }
+        }
       }
     ]
   },  
